@@ -1,7 +1,7 @@
-# weight converter
+# Weight converter
 
 weight = float(input("Enter Your weight: "))
-unit = input("Kilogram or Pounds (KG or LBS): ")
+unit = input("Kilograms or Pounds (KG or LBS): ").upper()
 
 if unit == "KG":
     weight *= 2.205
@@ -12,4 +12,4 @@ elif unit == "LBS":
     unit = "Kgs."
     print(f"Your weight is: {round(weight, 3)} {unit}")
 else:
-    print(f"{unit} wasn't valid unit")
+    print(f"{unit} is not a valid unit")
