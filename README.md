@@ -32,7 +32,7 @@ This repo is my public log: what I'm learning, what I'm building, and the notes/
 
 | 📍 Now | ⏭️ Next |
 |:---:|:---:|
-| **Python fundamentals** | NumPy / Pandas |
+| **Python fundamentals** | NumPy / Pandas, problem-solving with Python |
 
 </div>
 
@@ -46,11 +46,19 @@ This repo is my public log: what I'm learning, what I'm building, and the notes/
 
 | Project | Description | Status |
 |:---|:---|:---:|
-| — | — | — |
+| [Mad Libs Game](PYTHON%20PROJECTS/madlibs_game.py) | A small word game using user input and formatted strings. | Done |
+| [Calculator](PYTHON%20PROJECTS/calculator.py) | A CLI calculator for basic arithmetic operations. | Done |
+| [Weight Converter](PYTHON%20PROJECTS/weight_converter.py) | Converts weights between kilograms and pounds. | Done |
+| [Temperature Converter](PYTHON%20PROJECTS/temperature_converter.py) | Converts temperatures between Celsius and Fahrenheit. | Done |
 
 </div>
 
-*(fill in as I ship things)*
+### 🗂️ Repo Map
+
+| Folder | What's inside |
+|:---|:---|
+| [`PYTHON`](PYTHON) | Python fundamentals notes and practice files. |
+| [`PYTHON PROJECTS`](PYTHON%20PROJECTS) | Small beginner-friendly CLI projects. |
 
 ---
 

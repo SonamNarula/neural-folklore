@@ -11,6 +11,9 @@ elif operator == "-":
 elif operator == "*":
     print(f"Multiplication: {round(num1 * num2, 3)}")
 elif operator == "/":
-    print(f"Division: {round(num1 / num2, 3)}")
+    if num2 == 0:
+        print("Cannot divide by zero")
+    else:
+        print(f"Division: {round(num1 / num2, 3)}")
 else:
     print(f"{operator} is not a valid operator")
