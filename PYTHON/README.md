@@ -1,131 +1,136 @@
-<div align="center">
+# 🐍 PYTHON/
 
-# 🐍 PYTHON REPUTATION
+Lesson files for the Python fundamentals + control flow phase, following the [Bro Code Python course](https://youtu.be/ix9cRaBkVe0) in order.
 
-### `...ready for it?`
+**11 lessons complete** — Fundamentals module fully done, Control Flow in progress. On: preparing for While Loops. Applied projects for this range live in [`../PYTHON PROJECTS/`](../PYTHON%20PROJECTS).
 
-<br>
+Each file is standalone, runnable, and matches one lesson topic — typed and run by hand, no copy-pasted solutions.
 
-![Python](https://img.shields.io/badge/Python-3.11-000000?style=for-the-badge&logo=python&logoColor=white&labelColor=000000)
-![Status](https://img.shields.io/badge/Status-In_Progress-1a1a1a?style=for-the-badge&labelColor=000000)
-![Chapters](https://img.shields.io/badge/Chapters-1%2F13-2b2b2b?style=for-the-badge&labelColor=000000)
-![Q&A](https://img.shields.io/badge/Interview_Q&A-18-3d3d3d?style=for-the-badge&labelColor=000000)
-![Source](https://img.shields.io/badge/Source-Code_With_Harry-4f4f4f?style=for-the-badge&logo=youtube&logoColor=white&labelColor=000000)
+---
 
-</div>
+<details open>
+<summary><b>01 · Fundamentals</b> — 8/8 ✅ Complete</summary>
 
-<br>
-
-```bash
-$ whoami
-> Sonam Narula — DSA Captain @ Devcrest JU · AI+ML Engineering track · Germany Blue Card 🇩🇪
-
-$ cat era.txt
-> the old, scattered notes can't come to the phone right now.
-> why? because they're gone. this is the register now.
-
-$ cat philosophy.txt
-> concept → internals → gotchas → code → interview Q&A
-> if it wouldn't survive a real follow-up question, it doesn't make the cut.
-```
-
-<br>
-
-## 📊 Progress
-
-```
-[█░░░░░░░░░░░] 1/13 chapters
-
-Ch01 ▓▓▓▓▓▓▓▓▓▓ done
-Ch02 ░░░░░░░░░░ pending
-Ch03 ░░░░░░░░░░ pending
-Ch04 ░░░░░░░░░░ pending
-Ch05 ░░░░░░░░░░ pending
-Ch06 ░░░░░░░░░░ pending
-Ch07 ░░░░░░░░░░ pending
-Ch08 ░░░░░░░░░░ pending
-Ch09 ░░░░░░░░░░ pending
-Ch10 ░░░░░░░░░░ pending
-Ch11 ░░░░░░░░░░ pending
-Ch12 ░░░░░░░░░░ pending
-Ch13 ░░░░░░░░░░ pending
-```
-
-<br>
-
-## 📖 Chapter Log
-
-| # | Chapter | Status | Q&A count |
-|:-:|---|:-:|:-:|
-| 01 | Modules, Comments & pip | ✅ `done` | 18 |
-| 02 | Variables and Datatypes | ⬜ `pending` | — |
-| 03 | Strings | ⬜ `pending` | — |
-| 04 | Lists and Tuples | ⬜ `pending` | — |
-| 05 | Dictionary & Sets | ⬜ `pending` | — |
-| 06 | Conditional Expressions | ⬜ `pending` | — |
-| 07 | Loops in Python | ⬜ `pending` | — |
-| 08 | Functions & Recursion | ⬜ `pending` | — |
-| 09 | File I/O | ⬜ `pending` | — |
-| 10 | Object Oriented Programming | ⬜ `pending` | — |
-| 11 | Inheritance & more OOP | ⬜ `pending` | — |
-| 12 | Advanced Python 1 | ⬜ `pending` | — |
-| 13 | Advanced Python 2 | ⬜ `pending` | — |
-
-<details>
-<summary><b>🛠️ Projects tracked separately (code-only, not chapter-notes)</b></summary>
-<br>
-
-- 🐍 Snake, Water, Gun Game
-- 🎯 The Perfect Guess
-- 🤖 Mega Project 1 — Jarvis
-- 💬 Mega Project 2 — Auto Reply AI Chatbot
+- [x] Intro / first script → [`first.py`](./first.py)
+- [x] Variables → [`variable.py`](./variable.py)
+- [x] Type Casting → [`typecasting.py`](./typecasting.py)
+- [x] User Input → [`user_input.py`](./user_input.py)
+- [x] Arithmetic & Math → [`arithmetic_math.py`](./arithmetic_math.py)
+- [x] String Methods → [`string_methods.py`](./string_methods.py)
+- [x] String Indexing → [`string_indexing.py`](./string_indexing.py)
+- [x] Format Specifiers → [`format_specifiers.py`](./format_specifiers.py)
 
 </details>
 
-<br>
+<details open>
+<summary><b>02 · Control Flow</b> — 3/8</summary>
 
-## 🧠 Chapter Anatomy
+- [x] If Statements → [`if_statements.py`](./if_statements.py)
+- [x] Logical Operators → [`logical_operators.py`](./logical_operators.py)
+- [x] Conditional Expressions → [`conditional_expressions.py`](./conditional_expressions.py)
+- [ ] While Loops ← **next**
+- [ ] For Loops
+- [ ] Nested Loops
+- [ ] Match-Case
+- [ ] Membership Operators
 
-Every chapter in `python-register-notes.md` follows the same skeleton:
+</details>
 
+<details>
+<summary><b>03 · Collections</b> — 0/5</summary>
+
+- [ ] Lists, Sets, Tuples
+- [ ] 2D Collections
+- [ ] Dictionaries
+- [ ] List Comprehensions
+- [ ] Iterables
+
+</details>
+
+<details>
+<summary><b>04 · Functions</b> — 0/6</summary>
+
+- [ ] Functions
+- [ ] Default Arguments
+- [ ] Keyword Arguments
+- [ ] *args & **kwargs
+- [ ] Scope Resolution
+- [ ] `if __name__ == '__main__'`
+
+</details>
+
+<details>
+<summary><b>05 · Advanced Concepts</b> — 0/5</summary>
+
+- [ ] Modules
+- [ ] Random Numbers
+- [ ] Decorators
+- [ ] @property
+- [ ] Dates & Times
+
+</details>
+
+<details>
+<summary><b>06 · OOP</b> — 0/10</summary>
+
+- [ ] OOP Intro
+- [ ] Class Variables
+- [ ] Inheritance
+- [ ] Multiple Inheritance
+- [ ] `super()`
+- [ ] Polymorphism
+- [ ] Duck Typing
+- [ ] Static Methods
+- [ ] Class Methods
+- [ ] Magic Methods
+
+</details>
+
+<details>
+<summary><b>07 · Files & Exceptions</b> — 0/4</summary>
+
+- [ ] Exception Handling
+- [ ] File Detection
+- [ ] Writing Files
+- [ ] Reading Files
+
+</details>
+
+<details>
+<summary><b>08 · Concurrency & API</b> — 0/2</summary>
+
+- [ ] Multithreading
+- [ ] Requesting API Data
+
+</details>
+
+<details>
+<summary><b>09 · GUI (PyQt5)</b> — 0/9</summary>
+
+- [ ] Intro
+- [ ] Labels
+- [ ] Images
+- [ ] Layout Managers
+- [ ] Buttons
+- [ ] Checkboxes
+- [ ] Radio Buttons
+- [ ] Line Edits
+- [ ] CSS Styles
+
+</details>
+
+---
+
+### Running a lesson
+
+```bash
+python <filename>.py
+# e.g.
+python string_indexing.py
 ```
-## Chapter N — Topic
-[timestamp range]
 
-### N.1 Core Concept
-    → theory + why it actually matters
+### Naming convention going forward
 
-### N.2 Edge Cases & Deeper Gotchas
-    → the stuff that breaks in production,
-      the stuff interviewers actually probe
+As sub-modules progress, files may move into numbered sub-folders (`01_fundamentals/`, `02_control_flow/`, ...) so lesson order stays visible in the file tree itself, not just in this README.
 
-### 🧠 Practice Set — Chapter N
-    → Q&A, full answers, no "left as an exercise"
-```
-
-<br>
-
-## 🗣️ Style Notes
-
-- **English-primary** — Hinglish only where it genuinely clarifies a gotcha, not as decoration.
-- Every claim is either **code-verified** or **explicitly flagged as conceptual**.
-- No copy-paste from docs — every explanation reasoned through, interview-defensible.
-
-<br>
-
-## 🎯 Why This Exists
-
-Phase 1 of the AI+ML roadmap — Python fundamentals — feeding directly into `neural-folklore`.
-Goal isn't course completion. Goal is **interview-day recall under pressure**.
-
-<br>
-
-<div align="center">
-
-`python-register-notes.md` — the actual notes live there. This is just the register.
-
-<br>
-
-**🐍 reputation precedes the interview. build it now.**
-
-</div>
+**Rule:** a lesson only gets checked off here once its file exists in this folder. No marking ahead.
