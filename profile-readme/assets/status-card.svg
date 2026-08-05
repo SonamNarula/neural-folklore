@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="300" viewBox="0 0 410 300" fill="none">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+    .terminal {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    }
+    .window-bg {
+      fill: #1a1b26;
+      stroke: #383e5a;
+      stroke-width: 1.5;
+      rx: 10px;
+    }
+    .title-bar {
+      fill: #16161e;
+      stroke: #383e5a;
+      stroke-width: 1.5;
+      rx: 10px;
+    }
+    .dot-red { fill: #f7768e; }
+    .dot-yellow { fill: #e0af68; }
+    .dot-green { fill: #9ece6a; }
+    
+    .text-title { fill: #a9b1d6; font-size: 11px; font-weight: 500; }
+    .text-prompt { fill: #7dcfff; font-size: 12px; font-weight: 500; }
+    .text-cmd { fill: #7aa2f7; font-size: 12px; font-weight: 500; }
+    
+    .stats-header { fill: #e0af68; font-size: 11px; font-weight: bold; }
+    .stats-row { fill: #c0caf5; font-size: 11px; }
+    .stats-label { fill: #bb9af7; }
+    .stats-val { fill: #9ece6a; }
+    .stats-dim { fill: #565f89; }
+    
+    .progress-bar-bg { fill: #1f2335; rx: 2px; }
+    .progress-bar-fill { fill: #7aa2f7; rx: 2px; }
+  </style>
+
+  <!-- Background Card -->
+  <rect x="1.5" y="1.5" width="407" height="297" class="terminal window-bg" />
+  
+  <!-- Title Bar -->
+  <path d="M 1.5,11.5 A 10,10 0 0 1 11.5,1.5 L 398.5,1.5 A 10,10 0 0 1 408.5,11.5 L 408.5,35 L 1.5,35 Z" class="terminal title-bar" />
+  
+  <!-- Window Controls -->
+  <circle cx="15" cy="18" r="5" class="dot-red" />
+  <circle cx="30" cy="18" r="5" class="dot-yellow" />
+  <circle cx="45" cy="18" r="5" class="dot-green" />
+  
+  <!-- Window Title -->
+  <text x="205" y="22" text-anchor="middle" class="terminal text-title">sonam@github: top</text>
+
+  <!-- Content -->
+  <g class="terminal" transform="translate(20, 55)">
+    <!-- Command Prompt -->
+    <text x="0" y="10" class="text-prompt">sonam@github ~ % <tspan class="text-cmd">top</tspan></text>
+    
+    <!-- System Uptime Header -->
+    <text x="0" y="32" class="stats-header">Tasks: 4 active, 1 sleeping, 0 stopped</text>
+    <text x="0" y="47" class="stats-dim">Uptime: 200+ Days Streak | Load Avg: 0.98, 0.85, 0.72</text>
+    
+    <line x1="0" y1="58" x2="370" y2="58" stroke="#383e5a" stroke-width="1" />
+    
+    <!-- Stats Row 1: LeetCode -->
+    <g transform="translate(0, 75)">
+      <text x="0" y="10" class="stats-row"><tspan class="stats-label">LeetCode  </tspan> <tspan class="stats-val">488+ Solved</tspan> <tspan class="stats-dim">(Knight Tier)</tspan></text>
+      <!-- Progress Bar -->
+      <rect x="230" y="0" width="140" height="10" class="progress-bar-bg" />
+      <rect x="230" y="0" width="115" height="10" class="progress-bar-fill" style="fill: #9ece6a;" />
+    </g>
+    
+    <!-- Stats Row 2: Codeforces -->
+    <g transform="translate(0, 105)">
+      <text x="0" y="10" class="stats-row"><tspan class="stats-label">Codeforces</tspan> <tspan class="stats-val">Active     </tspan> <tspan class="stats-dim">(ghostcommit)</tspan></text>
+      <!-- Progress Bar -->
+      <rect x="230" y="0" width="140" height="10" class="progress-bar-bg" />
+      <rect x="230" y="0" width="90" height="10" class="progress-bar-fill" style="fill: #7aa2f7;" />
+    </g>
+    
+    <!-- Stats Row 3: AtCoder -->
+    <g transform="translate(0, 135)">
+      <text x="0" y="10" class="stats-row"><tspan class="stats-label">AtCoder   </tspan> <tspan class="stats-val">791 Rating </tspan> <tspan class="stats-dim">(Brown Tier)</tspan></text>
+      <!-- Progress Bar -->
+      <rect x="230" y="0" width="140" height="10" class="progress-bar-bg" />
+      <rect x="230" y="0" width="105" height="10" class="progress-bar-fill" style="fill: #e0af68;" />
+    </g>
+    
+    <!-- Stats Row 4: GFG -->
+    <g transform="translate(0, 165)">
+      <text x="0" y="10" class="stats-row"><tspan class="stats-label">GeeksforG </tspan> <tspan class="stats-val">Active     </tspan> <tspan class="stats-dim">(sonammnap)</tspan></text>
+      <!-- Progress Bar -->
+      <rect x="230" y="0" width="140" height="10" class="progress-bar-bg" />
+      <rect x="230" y="0" width="85" height="10" class="progress-bar-fill" style="fill: #bb9af7;" />
+    </g>
+
+    <line x1="0" y1="188" x2="370" y2="188" stroke="#383e5a" stroke-width="1" />
+    
+    <!-- Resource utilization -->
+    <g transform="translate(0, 205)">
+      <text x="0" y="10" class="stats-row"><tspan class="stats-label">MEM [DSA/CP] </tspan> <tspan class="stats-val">80%</tspan></text>
+      <text x="180" y="10" class="stats-row"><tspan class="stats-label">CPU [AI/ML] </tspan> <tspan class="stats-val">65%</tspan></text>
+    </g>
+    
+    <g transform="translate(0, 225)">
+      <text x="0" y="10" class="stats-row"><tspan class="stats-label">STATUS       </tspan> <tspan style="fill: #f7768e; font-weight: bold;">PLACEMENT_PIPELINE_READY</tspan></text>
+    </g>
+
+    <!-- Bottom prompt -->
+    <text x="0" y="260" class="text-prompt">sonam@github ~ % <tspan class="text-cmd">_</tspan></text>
+  </g>
+</svg>
