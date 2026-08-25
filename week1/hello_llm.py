@@ -1,24 +1,31 @@
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 from groq import Groq
 
-load_dotenv()  # .env file se variables load karta hai (jaise GROQ_API_KEY)
-
-my_api_key = os.getenv("GROQ_API_KEY")  # .env se key nikalna
+load_dotenv()
+my_api_key=os.getenv("GROQ_API_KEY")
 
 if not my_api_key:
-    raise ValueError("GROQ_API_KEY is missing")  # agar key nahi mili to error
+    raise ValueError("API key kaha hai bhai")
 
-client = Groq(api_key=my_api_key)  # Groq se connect karne wala "client" object banaya
+client=Groq(api_key=my_api_key)
 
-model = "llama-3.3-70b-versatile"  # kaunsa model use karna hai
+model="llama-3.3-70b-versatile"
+role="user"
+prompt="Do you know Padho with Pratyush"
+# message me role and content
+message={
+    "role": role,
+    "content": prompt
+}
 
-prompt = "What is Machine Learning?"  # tera actual sawaal
+messages=[message]
 
-response = client.chat.completions.create(
-    model=model,
-    messages=[{"role": "user", "content": prompt}]  # single user message bheja
-)
+response=client.chat.completions.create(model=model, messages=messages)
+print(response)
 
-answer = response.choices[0].message.content  # final answer nikalna
+print("#######################################")
+
+answer=response.choices[0].message.content
 print(answer)
