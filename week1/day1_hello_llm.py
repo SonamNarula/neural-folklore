@@ -14,7 +14,7 @@ client = Groq(api_key=my_api_key)
 model = "openai/gpt-oss-20b"
 
 role = "user"
-prompt = "Do you know Padho with Pratyush?"
+prompt = "Do you know striver?"
 
 message = {
     "role": role,
