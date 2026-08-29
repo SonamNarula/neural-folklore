@@ -23,10 +23,11 @@ message = {
 
 messages = [message]
 
-response = client.chat.completions.create(
-    model=model,
-    messages=messages
-)
-
-print(response.choices[0].message.content)
-# fghj
+try:
+    response = client.chat.completions.create(
+        model=model,
+        messages=messages
+    )
+    print(response.choices[0].message.content)
+except Exception as e:
+    print(f"API call failed: {type(e).__name__}: {e}")
