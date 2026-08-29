@@ -14,7 +14,7 @@ client = Groq(api_key=my_api_key)
 model = "openai/gpt-oss-20b"
 
 role = "user"
-prompt = "Do you know striver?"
+prompt = input("Ask your question: ")
 
 message = {
     "role": role,
@@ -29,3 +29,4 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
+# fghj
