@@ -7,52 +7,68 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![AI](https://img.shields.io/badge/Focus-LLMs%20%26%20AI%20Engineering-8A2BE2?style=for-the-badge)
 ![Status](https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge)
+![Stack](https://img.shields.io/badge/Stack-LangChain%20%7C%20Groq%20%7C%20HuggingFace-1f2937?style=for-the-badge)
 
 </div>
 
 ---
 
-## About this repo
+## Overview
 
-This repository is my learning journal for AI engineering, with a focus on:
+Neural Folklore is a personal AI engineering learning repo built around experimentation, documentation, and rapid iteration.
 
-- Python fundamentals
-- LLM concepts and model behavior
-- LangChain and AI app patterns
-- API-based model access with Groq, Google, and Mistral
-- hands-on experimentation and project building
+The focus is to understand how modern AI systems work in practice:
 
-This repo is intentionally practical and iterative. It is not a polished production app yet; it is a working archive of experiments, learning notes, and small AI projects.
+- Python fundamentals and clean scripting
+- LLM behavior and prompting
+- LangChain-based app patterns
+- hosted AI APIs and model access
+- embeddings and vector workflows
+- local open-source models via Hugging Face
 
----
-
-## What has been done so far
-
-The project setup is now in place and working at a basic level:
-
-- created a Python virtual environment
-- installed core dependencies from [requirements.txt](requirements.txt)
-- configured local environment variables in a `.env` file
-- tested LangChain chat model initialization
-- verified a working Groq-based chat integration
-- explored multiple model providers, including Groq, Google GenAI, and Mistral
-- set up Git ignore rules to keep secrets out of version control
-
-The working example currently uses Groq through LangChain and has been successfully validated with a real API key.
+This is not a polished production app. It is a living knowledge base and working playground for AI learning.
 
 ---
 
-## Current repo structure
+## What I’ve built so far
 
-- [chat models/chat.py](chat%20models/chat.py) — current chat model example using LangChain
-- [embedding models](embedding%20models) — work related to embeddings and vector workflows
-- [requirements.txt](requirements.txt) — dependencies for the project
-- [test.py](test.py) — scratch/test script
-- [.gitignore](.gitignore) — ignores `.env`, virtual environments, and Python cache files
+The repo now includes a basic but working AI stack setup:
+
+- Python environment configured and running
+- LangChain installed and tested
+- chat model integration working with Groq
+- experimentation across Groq, Google GenAI, and Mistral
+- embedding generation tested with hosted providers and local Hugging Face models
+- project structure organized around learning modules and experiments
+
+This is the foundation for moving from “learning AI” to “building with AI.”
 
 ---
 
-## Environment setup
+## Project structure
+
+- [chat models/chat.py](chat%20models/chat.py) — LangChain chat model setup
+- [embedding models/embeddings.py](embedding%20models/embeddings.py) — API-based embedding examples
+- [embedding models/huggingface_embeddings.py](embedding%20models/huggingface_embeddings.py) — local Hugging Face embedding example
+- [requirements.txt](requirements.txt) — Python dependencies
+- [test.py](test.py) — scratch/testing script
+- [.gitignore](.gitignore) — excludes local secrets and environment files
+
+---
+
+## Current stack
+
+- Python
+- LangChain
+- Groq
+- Google Generative AI
+- Mistral
+- Hugging Face sentence-transformers
+- dotenv for local environment configuration
+
+---
+
+## Setup
 
 From the project root:
 
@@ -63,7 +79,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Create a local `.env` file in the project root and add your keys there:
+Create a local `.env` file and add your keys:
 
 ```env
 GROQ_API_KEY=your_key_here
@@ -71,7 +87,7 @@ GOOGLE_API_KEY=your_key_here
 MISTRAL_API_KEY=your_key_here
 ```
 
-> Keep your `.env` file local and never commit secrets to GitHub.
+> Keep secrets local. Never commit `.env` or API keys to GitHub.
 
 ---
 
@@ -83,54 +99,76 @@ source .venv/bin/activate
 python "chat models/chat.py"
 ```
 
-Current working pattern:
+Working model pattern:
 
 ```python
+from langchain.chat_models import init_chat_model
+
 model = init_chat_model("groq:openai/gpt-oss-20b")
 response = model.invoke("Hello! How are you today?")
 print(response)
 ```
 
-This has been validated successfully.
+---
+
+## Embedding experiments
+
+The repo includes both hosted and local embedding approaches.
+
+### Hosted embeddings
+
+```python
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+
+embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
+vector = embeddings.embed_query("You are going to learn Gen AI")
+print(vector)
+```
+
+### Local embeddings with Hugging Face
+
+```python
+from langchain_huggingface import HuggingFaceEmbeddings
+
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
+
+texts = ["Hello world", "Bonjour le monde"]
+print(embeddings.embed_documents(texts))
+```
+
+These examples help compare managed APIs against local open-source embedding workflows.
 
 ---
 
-## Provider exploration
+## Learning roadmap
 
-The project has started testing multiple chat providers with LangChain:
-
-- Groq
-- Google Generative AI
-- Mistral
-
-This is useful for understanding provider differences, model naming conventions, and API setup patterns while building AI projects.
+1. Python and problem solving
+2. LLM fundamentals and prompting
+3. LangChain app patterns
+4. model provider integration and API setup
+5. embeddings and retrieval concepts
+6. build small end-to-end AI tools and demos
 
 ---
 
 ## Security note
 
-API keys are treated as local secrets.
+This project follows a simple rule:
 
-- do not commit `.env`
-- do not upload raw credentials to GitHub
-- keep secrets only in the local development environment
-- rely on `.gitignore` to prevent accidental commits
-
----
-
-## Next learning goals
-
-1. build more structured AI mini-projects
-2. explore embeddings and vector search
-3. connect LLMs with tools and memory
-4. build a small app using LangChain + local or remote models
-5. document experiments and lessons as the repo grows
+- no secrets in git history
+- no raw API keys in the repo
+- keep credentials only in a local `.env` file
+- use `.gitignore` to avoid accidental exposure
 
 ---
 
-## Notes
+## Closing note
 
-This project is a record of learning by doing. The goal is progress, experimentation, and understanding how modern AI systems fit together in practice.
+This repository is a trail of learning: experiments, wins, mistakes, and the steady path from curiosity to capability.
+
+The goal is not perfection. The goal is momentum.
 
 ---
 
