@@ -6,7 +6,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![AI](https://img.shields.io/badge/Focus-LLMs%20%26%20AI%20Engineering-8A2BE2?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-learning-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge)
 
 </div>
 
@@ -14,91 +14,123 @@
 
 ## About this repo
 
-This repository is a personal learning journal focused on Python, LLMs, and AI engineering.
+This repository is my learning journal for AI engineering, with a focus on:
 
-The goal is to explore the practical side of AI development through:
+- Python fundamentals
+- LLM concepts and model behavior
+- LangChain and AI app patterns
+- API-based model access with Groq, Google, and Mistral
+- hands-on experimentation and project building
 
-- Python and software fundamentals
-- prompt engineering and model behavior
-- LangChain workflows
-- API-based LLM integrations
-- small experiments and prototypes
-
-This is a working repo, not a polished product.
+This repo is intentionally practical and iterative. It is not a polished production app yet; it is a working archive of experiments, learning notes, and small AI projects.
 
 ---
 
-## Current project setup
+## What has been done so far
 
-The example chat script in [chat models/chat.py](chat%20models/chat.py) is currently configured to use Groq via LangChain.
+The project setup is now in place and working at a basic level:
 
-### Required setup
+- created a Python virtual environment
+- installed core dependencies from [requirements.txt](requirements.txt)
+- configured local environment variables in a `.env` file
+- tested LangChain chat model initialization
+- verified a working Groq-based chat integration
+- explored multiple model providers, including Groq, Google GenAI, and Mistral
+- set up Git ignore rules to keep secrets out of version control
 
-1. Create a local [.env](.env) file in the project root.
-2. Add your Groq key:
-
-```env
-GROQ_API_KEY=your_key_here
-```
-
-3. Never commit the `.env` file or any API secrets to Git.
+The working example currently uses Groq through LangChain and has been successfully validated with a real API key.
 
 ---
 
-## Repo structure
+## Current repo structure
 
-- [chat models/chat.py](chat%20models/chat.py) — LangChain chat model example using Groq
-- [embedding models](embedding%20models) — embeddings experiments and related work
-- [requirements.txt](requirements.txt) — Python dependencies
+- [chat models/chat.py](chat%20models/chat.py) — current chat model example using LangChain
+- [embedding models](embedding%20models) — work related to embeddings and vector workflows
+- [requirements.txt](requirements.txt) — dependencies for the project
 - [test.py](test.py) — scratch/test script
+- [.gitignore](.gitignore) — ignores `.env`, virtual environments, and Python cache files
 
 ---
 
-## Quick start
+## Environment setup
+
+From the project root:
 
 ```bash
-git clone https://github.com/SonamNarula/neural-folklore.git
-cd neural-folklore
+cd "/Users/sonamnarula/Desktop/generative ai"
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Create your local `.env` file with the Groq key before running the chat example:
+Create a local `.env` file in the project root and add your keys there:
 
-```bash
-python "chat models/chat.py"
+```env
+GROQ_API_KEY=your_key_here
+GOOGLE_API_KEY=your_key_here
+MISTRAL_API_KEY=your_key_here
 ```
+
+> Keep your `.env` file local and never commit secrets to GitHub.
 
 ---
 
-## Working example
+## Run the chat example
 
-The current working approach uses Groq with a valid model such as:
+```bash
+cd "/Users/sonamnarula/Desktop/generative ai"
+source .venv/bin/activate
+python "chat models/chat.py"
+```
+
+Current working pattern:
 
 ```python
 model = init_chat_model("groq:openai/gpt-oss-20b")
+response = model.invoke("Hello! How are you today?")
+print(response)
 ```
 
-This has been verified to work with a valid Groq API key.
+This has been validated successfully.
+
+---
+
+## Provider exploration
+
+The project has started testing multiple chat providers with LangChain:
+
+- Groq
+- Google Generative AI
+- Mistral
+
+This is useful for understanding provider differences, model naming conventions, and API setup patterns while building AI projects.
 
 ---
 
 ## Security note
 
-Keep all API keys local.
+API keys are treated as local secrets.
 
-- Do not commit [.env](.env)
-- Do not push raw secrets to GitHub
-- Add `.env` and similar secret files to `.gitignore`
+- do not commit `.env`
+- do not upload raw credentials to GitHub
+- keep secrets only in the local development environment
+- rely on `.gitignore` to prevent accidental commits
 
-This repo is meant to document the learning journey, not expose credentials.
+---
+
+## Next learning goals
+
+1. build more structured AI mini-projects
+2. explore embeddings and vector search
+3. connect LLMs with tools and memory
+4. build a small app using LangChain + local or remote models
+5. document experiments and lessons as the repo grows
 
 ---
 
 ## Notes
 
-This project is structured around curiosity, iteration, and learning by building.
+This project is a record of learning by doing. The goal is progress, experimentation, and understanding how modern AI systems fit together in practice.
 
 ---
 
