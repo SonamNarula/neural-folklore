@@ -1,191 +1,201 @@
 <div align="center">
 
-# Neural Folklore
+# 🧠 Neural Folklore
 
-### Learning in public: Python + LLMs + AI engineering
+### *"this is me trying"*
+
+**A final-year CSE student's public build log — moving from Software Engineering into AI Engineering, one committed lesson at a time.**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![AI](https://img.shields.io/badge/Focus-LLMs%20%26%20AI%20Engineering-8A2BE2?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge)
-![Stack](https://img.shields.io/badge/Stack-LangChain%20%7C%20Groq%20%7C%20HuggingFace-1f2937?style=for-the-badge)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Status](https://img.shields.io/badge/status-actively%20building-brightgreen?style=for-the-badge)
+![Open to Work](https://img.shields.io/badge/open%20to-SDE%20%2F%20AI%20Engineering%20roles-important?style=for-the-badge)
+
+[Notes](#-llm-engineering-notes) · [What Works Today](#-what-actually-works-today) · [Repo Map](#-repo-map) · [Setup](#-getting-started) · [Progress](#-progress-snapshot) · [Connect](#-lets-connect)
 
 </div>
 
 ---
 
-## Overview
+## 👋 About
 
-Neural Folklore is a personal AI engineering learning repo built around experimentation, documentation, and rapid iteration.
+I'm Sonam — a final-year CSE student navigating placement season while deliberately building toward **AI Engineering**: building *with* foundation models (LLMs, RAG, agentic systems) rather than training them from scratch.
 
-The focus is to understand how modern AI systems work in practice:
+> **Background:** a competitive-programming foundation first — 500+ LeetCode problems, Knight tier, AtCoder Brown — now redirected at Python fluency, LLM tooling, and production-shaped AI systems.
 
-- Python fundamentals and clean scripting
-- LLM behavior and prompting
-- LangChain-based app patterns
-- hosted AI APIs and model access
-- embeddings and vector workflows
-- local open-source models via Hugging Face
+I'm learning Python properly first (it demands a different daily-driver fluency than CP ever did), while running a parallel, from-scratch curriculum on how LLMs actually work — and shipping small, working things along the way instead of just collecting notes.
 
-This is not a polished production app. It is a living knowledge base and working playground for AI learning.
+This repo is that trail: less "polished portfolio," more **working in the open** — what's learned, what's built, and what's still queued, tracked honestly rather than dressed up.
 
 ---
 
-## What I’ve built so far
+## ✅ What actually works today
 
-The repo now includes a basic but working AI stack setup:
+Not just notes — code that runs:
 
-- Python environment configured and running
-- LangChain installed and tested
-- chat model integration working with Groq
-- experimentation across Groq, Google GenAI, and Mistral
-- embedding generation tested with hosted providers and local Hugging Face models
-- a working Mistral-powered chatbot prototype built in [chat models/chatbot.py](chat%20models/chatbot.py)
-- project structure organized around learning modules and experiments
-
-This is the foundation for moving from “learning AI” to “building with AI.”
+- 🔌 **Multi-provider LLM integration** via LangChain — [Groq](<chat models/chat_groq.py>), [Gemini](<chat models/chat_gemini.py>), [Mistral](<chat models/chat_mistral.py>), and HuggingFace (both [hosted endpoint](<chat models/huggingface.py>) and [local pipeline](<chat models/localmodel.py>))
+- 🤖 A working **terminal chatbot** with rolling conversation memory, powered by Mistral — [`chatbot.py`](<chat models/chatbot.py>)
+- 🧬 **Embedding pipelines**, both hosted ([Google/Mistral](<embedding models/embeddings.py>)) and fully local ([sentence-transformers](<embedding models/huggingface_embeddings.py>)) — for comparing managed APIs against open-source alternatives
+- 📚 A **6-part, written-from-scratch LLM engineering curriculum** — tokenization and attention through agents, tools, and memory — kept current with where the field stood as of writing (MoE architectures, reasoning models, local inference)
+- 🐍 **Python fundamentals, tracked lesson-by-lesson**, with mini-projects that only get built *after* the matching lesson is actually done — never before
 
 ---
 
-## Project structure
+## 🗺️ Repo map
 
-- [chat models/chat.py](chat%20models/chat.py) — LangChain chat model setup
-- [chat models/chatbot.py](chat%20models/chatbot.py) — interactive chatbot using Mistral
-- [embedding models/embeddings.py](embedding%20models/embeddings.py) — API-based embedding examples
-- [embedding models/huggingface_embeddings.py](embedding%20models/huggingface_embeddings.py) — local Hugging Face embedding example
-- [requirements.txt](requirements.txt) — Python dependencies
-- [test.py](test.py) — scratch/testing script
-- [.gitignore](.gitignore) — excludes local secrets and environment files
+```
+neural-folklore/
+├── LLMs/                 → 6-part deep-dive LLM engineering curriculum
+├── PYTHON/                → fundamentals & control-flow lessons (live tracker inside)
+├── PYTHON PROJECTS/       → mini-projects applying those lessons (live tracker inside)
+├── chat models/           → multi-provider LangChain chat integrations
+├── embedding models/      → hosted + local embedding experiments
+├── requirements.txt       → full AI/ML dependency stack
+└── pyproject.toml         → project metadata (uv-managed)
+```
 
----
-
-## Current stack
-
-- Python
-- LangChain
-- Groq
-- Google Generative AI
-- Mistral
-- Hugging Face sentence-transformers
-- dotenv for local environment configuration
+Two of these folders keep their own detailed, self-updating trackers — worth a look:
+- [`PYTHON/readme.md`](<PYTHON/readme.md>) — lesson-by-lesson checklist across 9 modules (fundamentals → control flow → OOP → GUI)
+- [`PYTHON PROJECTS/README.md`](<PYTHON%20PROJECTS/README.md>) — a 20-project build queue, each unlocked only once its prerequisite lessons are done
 
 ---
 
-## Setup
+## 📖 LLM Engineering Notes
 
-From the project root:
+Written as a personal, from-scratch curriculum — not copied from a single course. Each note pairs a Hinglish explanation with a clean English summary, because being able to explain a concept simply is as much the point as understanding it.
+
+| Day | Topic | What it covers |
+|:---:|-------|-----------------|
+| 1 | [**LLM Basics**](<LLMs/Day 1 BASICS.md>) | Tokenization, attention, how prediction actually happens — plus 2026-era context: MoE architectures, reasoning/thinking models, long context windows |
+| 2 | [**Hugging Face**](<LLMs/Day 2 HUGGING FACE.md>) | Where open-source models live, quantization, and what will actually run on modest hardware |
+| 3 | [**Ollama + LM Studio**](<LLMs/Day%203%20Ollama%20+%20LM%20Studio.md>) | Running quantized LLMs locally — no cloud bill, no API key |
+| 4 | [**Prompting**](<LLMs/Day 4 Prompting.md>) | Prompt engineering fundamentals, and how reasoning models are reshaping which techniques still matter |
+| 5 | [**LangChain Basics**](<LLMs/Day 5 LangChain Basics.md>) | Chains vs. agents, LCEL, and using an LLM as one component inside a larger system |
+| 6 | [**Tools, Memory & Agents**](<LLMs/Day%206%20Tool%20%2C%20Memory%20and%20Agent.md>) | Giving an agent reach beyond its own knowledge (tools) and continuity across turns (memory) — closes with a working Q&A bot |
+
+---
+
+## 📊 Progress snapshot
+
+Tracked honestly — nothing here is marked done until the file exists and runs.
+
+| Track | Status |
+|-------|--------|
+| Python — Fundamentals | ![8/8](https://img.shields.io/badge/8%2F8-complete-brightgreen?style=flat-square) |
+| Python — Control Flow | ![3/8](https://img.shields.io/badge/3%2F8-in%20progress-yellow?style=flat-square) |
+| Applied mini-projects | ![4/20](https://img.shields.io/badge/4%2F20-building-orange?style=flat-square) |
+| LLM engineering curriculum | ![6 days](https://img.shields.io/badge/6%20days-written-8A2BE2?style=flat-square) |
+| Multi-provider chat integration | ![working](https://img.shields.io/badge/Groq%20%7C%20Gemini%20%7C%20Mistral%20%7C%20HF-working-brightgreen?style=flat-square) |
+| Embeddings (hosted + local) | ![working](https://img.shields.io/badge/hosted%20%2B%20local-working-brightgreen?style=flat-square) |
+
+---
+
+## 🧰 Tech stack
+
+**Core**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=uv&logoColor=white)
+
+**LLM orchestration**
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
+
+**Model providers**
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white)
+![Mistral](https://img.shields.io/badge/Mistral-FA520F?style=flat-square)
+![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+
+**Embeddings & vector stores**
+![Sentence Transformers](https://img.shields.io/badge/sentence--transformers-FFD21E?style=flat-square)
+![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-6C3EF4?style=flat-square)
+![Pinecone](https://img.shields.io/badge/Pinecone-1B1B1F?style=flat-square)
+
+**Serving / tooling**
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+
+---
+
+## 🚀 Getting started
 
 ```bash
-cd "/Users/sonamnarula/Desktop/generative ai"
+git clone https://github.com/SonamNarula/neural-folklore.git
+cd neural-folklore
+
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+
 pip install -r requirements.txt
 ```
 
-Create a local `.env` file and add your keys:
+Create a local `.env` in the project root and add whichever keys you plan to use:
 
 ```env
 GROQ_API_KEY=your_key_here
+GEMINI_API_KEY=your_key_here
 GOOGLE_API_KEY=your_key_here
 MISTRAL_API_KEY=your_key_here
 ```
 
-> Keep secrets local. Never commit `.env` or API keys to GitHub.
+> `.env` is git-ignored by default. Never commit real keys.
 
----
-
-## Run the chat examples
-
-### Basic model test
+**Try a chat model:**
 
 ```bash
-cd "/Users/sonamnarula/Desktop/generative ai"
-source .venv/bin/activate
-python "chat models/chat.py"
+python "chat models/chat_groq.py"
 ```
 
-Working pattern:
-
-```python
-from langchain.chat_models import init_chat_model
-
-model = init_chat_model("groq:openai/gpt-oss-20b")
-response = model.invoke("Hello! How are you today?")
-print(response)
-```
-
-### Interactive chatbot
+**Talk to the memory-backed chatbot:**
 
 ```bash
-cd "/Users/sonamnarula/Desktop/generative ai"
-source .venv/bin/activate
 python "chat models/chatbot.py"
+# keeps chatting until you type 0 to exit
 ```
 
-This chatbot uses Mistral through LangChain and keeps taking user prompts until you enter `0` to exit.
+**Run an embedding experiment:**
 
----
-
-## Embedding experiments
-
-The repo includes both hosted and local embedding approaches.
-
-### Hosted embeddings
-
-```python
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-
-embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
-vector = embeddings.embed_query("You are going to learn Gen AI")
-print(vector)
+```bash
+python "embedding models/embeddings.py"            # hosted (Google / Mistral)
+python "embedding models/huggingface_embeddings.py" # fully local
 ```
 
-### Local embeddings with Hugging Face
+---
 
-```python
-from langchain_huggingface import HuggingFaceEmbeddings
+## 🧭 Roadmap
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+**Python:** While Loops → For Loops → Collections → Functions → OOP → Files & Exceptions → Concurrency & APIs → PyQt5 GUI apps — each unlocking the next batch of mini-projects.
 
-texts = ["Hello world", "Bonjour le monde"]
-print(embeddings.embed_documents(texts))
-```
-
-These examples help compare managed APIs against local open-source embedding workflows.
+**AI Engineering:** wire up a retrieval pipeline over FAISS/Chroma, build a first real RAG project end-to-end, extend the Day 6 agent into something tool-rich and deployable, and serve a demo via FastAPI or Streamlit.
 
 ---
 
-## Learning roadmap
+## 🔒 A quiet engineering habit
 
-1. Python and problem solving
-2. LLM fundamentals and prompting
-3. LangChain app patterns
-4. model provider integration and API setup
-5. embeddings and retrieval concepts
-6. build small end-to-end AI tools and demos
+- No secrets in git history, ever
+- No raw API keys committed — `.env` only, always git-ignored
+- Nothing is marked "done" in a tracker until its file exists and actually runs
 
----
-
-## Security note
-
-This project follows a simple rule:
-
-- no secrets in git history
-- no raw API keys in the repo
-- keep credentials only in a local `.env` file
-- use `.gitignore` to avoid accidental exposure
+Small habits, but the kind that are supposed to carry over into anything shipped later.
 
 ---
 
-## Closing note
+## 📫 Let's connect
 
-This repository is a trail of learning: experiments, wins, mistakes, and the steady path from curiosity to capability.
+![GitHub](https://img.shields.io/badge/GitHub-SonamNarula-181717?style=for-the-badge&logo=github&logoColor=white)
+![Email](https://img.shields.io/badge/Email-sonamnarula2108%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 
-The goal is not perfection. The goal is momentum.
+If you're hiring for SDE or AI Engineering roles, or just want to talk shop about LLMs — my inbox is open.
 
 ---
 
 <div align="center">
+
+*"and I'm never gonna stop being scared of storms, but I'm always gonna be here doing the work anyway."*
+
 <sub><i>Learning is the process. The repo is the trail.</i></sub>
+
 </div>
