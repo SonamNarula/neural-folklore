@@ -39,6 +39,7 @@ The repo now includes a basic but working AI stack setup:
 - chat model integration working with Groq
 - experimentation across Groq, Google GenAI, and Mistral
 - embedding generation tested with hosted providers and local Hugging Face models
+- a working Mistral-powered chatbot prototype built in [chat models/chatbot.py](chat%20models/chatbot.py)
 - project structure organized around learning modules and experiments
 
 This is the foundation for moving from “learning AI” to “building with AI.”
@@ -48,6 +49,7 @@ This is the foundation for moving from “learning AI” to “building with AI.
 ## Project structure
 
 - [chat models/chat.py](chat%20models/chat.py) — LangChain chat model setup
+- [chat models/chatbot.py](chat%20models/chatbot.py) — interactive chatbot using Mistral
 - [embedding models/embeddings.py](embedding%20models/embeddings.py) — API-based embedding examples
 - [embedding models/huggingface_embeddings.py](embedding%20models/huggingface_embeddings.py) — local Hugging Face embedding example
 - [requirements.txt](requirements.txt) — Python dependencies
@@ -91,7 +93,9 @@ MISTRAL_API_KEY=your_key_here
 
 ---
 
-## Run the chat example
+## Run the chat examples
+
+### Basic model test
 
 ```bash
 cd "/Users/sonamnarula/Desktop/generative ai"
@@ -99,7 +103,7 @@ source .venv/bin/activate
 python "chat models/chat.py"
 ```
 
-Working model pattern:
+Working pattern:
 
 ```python
 from langchain.chat_models import init_chat_model
@@ -108,6 +112,16 @@ model = init_chat_model("groq:openai/gpt-oss-20b")
 response = model.invoke("Hello! How are you today?")
 print(response)
 ```
+
+### Interactive chatbot
+
+```bash
+cd "/Users/sonamnarula/Desktop/generative ai"
+source .venv/bin/activate
+python "chat models/chatbot.py"
+```
+
+This chatbot uses Mistral through LangChain and keeps taking user prompts until you enter `0` to exit.
 
 ---
 
