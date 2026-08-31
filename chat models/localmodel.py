@@ -12,6 +12,6 @@ llm = HuggingFacePipeline.from_model_id(
 
 chat_model = ChatHuggingFace(llm=llm)
 
-result = chat_model.invoke("tell me about mext scholarship")
+result = chat_model.invoke("where can i learn ai from ?")
 
 print(result.content)
