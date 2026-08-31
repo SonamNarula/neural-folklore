@@ -1,10 +1,10 @@
-.DS_Store
-__pycache__/
-*.py[cod]
+.env
 .venv/
 venv/
 env/
+__pycache__/
+*.py[cod]
+*.pyc
+.DS_Store
 .idea/
 .vscode/
-audit_solution
-.env
