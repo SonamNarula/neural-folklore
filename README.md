@@ -14,34 +14,43 @@
 
 ## About this repo
 
-This repository is my personal learning journal as I move from software engineering fundamentals into AI engineering.
+This repository is a personal learning journal focused on Python, LLMs, and AI engineering.
 
-The focus is simple:
+The goal is to explore the practical side of AI development through:
 
-- build Python fluency
-- understand how LLMs work internally
-- learn Hugging Face, Ollama, LM Studio, LangChain, prompting, and tools
-- document the journey in public
+- Python and software fundamentals
+- prompt engineering and model behavior
+- LangChain workflows
+- API-based LLM integrations
+- small experiments and prototypes
 
-The repo is not a polished product. It is a working archive of notes, experiments, and practice files.
+This is a working repo, not a polished product.
+
+---
+
+## Current project setup
+
+The example chat script in [chat models/chat.py](chat%20models/chat.py) is currently configured to use Groq via LangChain.
+
+### Required setup
+
+1. Create a local [.env](.env) file in the project root.
+2. Add your Groq key:
+
+```env
+GROQ_API_KEY=your_key_here
+```
+
+3. Never commit the `.env` file or any API secrets to Git.
 
 ---
 
 ## Repo structure
 
-- [LLMs](LLMs) — notes and study guides for LLM fundamentals and practical usage
-- [PYTHON](PYTHON) — Python basics, exercises, and learning notes
-- [PYTHON PROJECTS](PYTHON%20PROJECTS) — small beginner projects built while learning
-
----
-
-## Current learning path
-
-1. Python fundamentals and problem solving
-2. LLM internals and model behavior
-3. Hugging Face and local model workflows
-4. Prompting, tools, memory, and agents
-5. Building practical AI projects
+- [chat models/chat.py](chat%20models/chat.py) — LangChain chat model example using Groq
+- [embedding models](embedding%20models) — embeddings experiments and related work
+- [requirements.txt](requirements.txt) — Python dependencies
+- [test.py](test.py) — scratch/test script
 
 ---
 
@@ -55,13 +64,41 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> Keep your local `.env` file outside of Git. It is intentionally not part of this repo.
+Create your local `.env` file with the Groq key before running the chat example:
+
+```bash
+python "chat models/chat.py"
+```
+
+---
+
+## Working example
+
+The current working approach uses Groq with a valid model such as:
+
+```python
+model = init_chat_model("groq:openai/gpt-oss-20b")
+```
+
+This has been verified to work with a valid Groq API key.
+
+---
+
+## Security note
+
+Keep all API keys local.
+
+- Do not commit [.env](.env)
+- Do not push raw secrets to GitHub
+- Add `.env` and similar secret files to `.gitignore`
+
+This repo is meant to document the learning journey, not expose credentials.
 
 ---
 
 ## Notes
 
-This project is a learning repo for AI engineering. It is structured around curiosity, iteration, and documenting progress while learning.
+This project is structured around curiosity, iteration, and learning by building.
 
 ---
 
