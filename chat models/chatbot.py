@@ -5,6 +5,9 @@ from langchain_mistralai import ChatMistralAI
 
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
+from langchain_mistralai import ChatMistralAI
+from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
+
 api_key = os.getenv("MISTRAL_API_KEY")
 
 if not api_key:
