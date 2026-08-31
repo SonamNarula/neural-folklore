@@ -19,6 +19,6 @@ model = ChatMistralAI(
     api_key=api_key
 )
 
-response = model.invoke("Hello! How are you today?")
+response = model.invoke("tell me everythng about article 370 movie")
 
 print(response.content)
