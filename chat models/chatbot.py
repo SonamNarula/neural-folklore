@@ -18,13 +18,15 @@ model = ChatMistralAI(
     api_key=api_key
 )
 
-chat_history = []
+chat_history = [
+    SystemMessage(content = " you are a funny ai agent")
+]
 
 while True:
     print("-----------------------------welcome to the chatbot-----------------------------")
 
     prompt = input("You: ")
-
+    chat_history.append(HumanMessage(content=prompt))
     if prompt == "0":
         print("Exiting...")
         break
