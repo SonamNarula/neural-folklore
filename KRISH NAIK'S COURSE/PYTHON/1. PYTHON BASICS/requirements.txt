@@ -1,0 +1,8 @@
+ipykernel jupyter notebook numpy pandas matplotlib seaborn scikit-learn
+requests python-dotenv httpx flask fastapi uvicorn openai anthropic
+google-generativeai groq transformers huggingface-hub datasets
+sentence-transformers tokenizers langchain langchain-core
+langchain-community langchain-openai langchain-anthropic
+langchain-google-genai langchain-huggingface langgraph chromadb
+faiss-cpu pinecone weaviate-client pypdf PyPDF2 python-docx openpyxl
+beautifulsoup4 lxml Pillow tqdm pydantic pydantic-settings rich
