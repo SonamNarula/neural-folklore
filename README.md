@@ -17,8 +17,19 @@ The current project is the Python Basics practice set:
 - `1. PYTHON BASICS/odd_or_even.ipynb` - Odd and even number checks
 - `1. PYTHON BASICS/positive_negative_or_zero.ipynb` - Number classification
 - `1. PYTHON BASICS/common_errors.ipynb` - Common Python errors
+- `1. PYTHON BASICS/Common Errors In Loops.ipynb` - Common loop errors
 - `1. PYTHON BASICS/calculator.ipynb` - Calculator practice
 - `1. PYTHON BASICS/for_loop.ipynb` - For-loop practice
+- `1. PYTHON BASICS/while_loop.ipynb` - While-loop practice
+- `1. PYTHON BASICS/nested_loops.ipynb` - Nested loops
+- `1. PYTHON BASICS/Nested Loop — Pattern Printing.ipynb` - Pattern printing with nested loops
+- `1. PYTHON BASICS/break.ipynb` - Exiting loops with `break`
+- `1. PYTHON BASICS/continue.ipynb` - Skipping iterations with `continue`
+- `1. PYTHON BASICS/pass.ipynb` - Using `pass` in control flow
+- `1. PYTHON BASICS/factorial.ipynb` - Factorial calculations
+- `1. PYTHON BASICS/multiplication_table.ipynb` - Multiplication tables
+- `1. PYTHON BASICS/sum.ipynb` - Summing values with loops
+- `1. PYTHON BASICS/user_input + loop.ipynb` - Combining user input and loops
 - `1. PYTHON BASICS/requirements.txt` - Notebook dependencies
 
 ## Run Locally
