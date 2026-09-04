@@ -1,49 +1,69 @@
-# Neural Folklore
+# neural-folklore
 
-A learning repository for Python fundamentals and AI engineering experiments.
+*from software engineer to AI engineer, one broken cell at a time*
 
-## Current Work
+[![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/status-cooking-2b2b2b?style=for-the-badge)](#)
+[![Focus](https://img.shields.io/badge/focus-AI%20Engineering-1a1a1a?style=for-the-badge)](#)
+[![Vibe](https://img.shields.io/badge/vibe-immaculate-000000?style=for-the-badge)](#)
 
-The current project is the Python Basics practice set:
+---
 
-- `1. PYTHON BASICS/1.0-basic.ipynb` - Python fundamentals exercises
-- `1. PYTHON BASICS/1.1-Variables.ipynb` - Variables
-- `1. PYTHON BASICS/1.2-DataTypes.ipynb` - Data types
-- `1. PYTHON BASICS/1.3-operators.ipynb` - Operators
-- `1. PYTHON BASICS/ConditionalStatements.ipynb` - Conditional statements
-- `1. PYTHON BASICS/all conditionals.ipynb` - Conditional practice
-- `1. PYTHON BASICS/Driving Eligibility.ipynb` - Driving eligibility checks
-- `1. PYTHON BASICS/Largest of Two Numbers.ipynb` - Comparison practice
-- `1. PYTHON BASICS/odd_or_even.ipynb` - Odd and even number checks
-- `1. PYTHON BASICS/positive_negative_or_zero.ipynb` - Number classification
-- `1. PYTHON BASICS/common_errors.ipynb` - Common Python errors
-- `1. PYTHON BASICS/Common Errors In Loops.ipynb` - Common loop errors
-- `1. PYTHON BASICS/calculator.ipynb` - Calculator practice
-- `1. PYTHON BASICS/for_loop.ipynb` - For-loop practice
-- `1. PYTHON BASICS/while_loop.ipynb` - While-loop practice
-- `1. PYTHON BASICS/nested_loops.ipynb` - Nested loops
-- `1. PYTHON BASICS/Nested Loop — Pattern Printing.ipynb` - Pattern printing with nested loops
-- `1. PYTHON BASICS/break.ipynb` - Exiting loops with `break`
-- `1. PYTHON BASICS/continue.ipynb` - Skipping iterations with `continue`
-- `1. PYTHON BASICS/pass.ipynb` - Using `pass` in control flow
-- `1. PYTHON BASICS/factorial.ipynb` - Factorial calculations
-- `1. PYTHON BASICS/multiplication_table.ipynb` - Multiplication tables
-- `1. PYTHON BASICS/sum.ipynb` - Summing values with loops
-- `1. PYTHON BASICS/user_input + loop.ipynb` - Combining user input and loops
-- `1. PYTHON BASICS/requirements.txt` - Notebook dependencies
+### 📖 what even is this
 
-## Run Locally
+I'm Sonam — final-year CSE, placement season breathing down my neck, and somewhere in between I decided to become an **AI Engineer**. Not "train models from scratch in a basement" AI engineer, the other kind: building actual things on top of LLMs — RAG pipelines, agents, tools that do stuff.
 
-Create and activate a virtual environment, then install the dependencies:
+**Step zero: Python.** Turns out competitive programming C++ did not prepare me for this at all. So this repo is me getting fluent, one notebook at a time, in public, mistakes included.
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r "1. PYTHON BASICS/requirements.txt"
-```
+No polish. No "10x engineer" cosplay. Just receipts.
 
-Open any notebook in VS Code or Jupyter and select the same environment as its kernel.
+> **the backstory:** 500+ LeetCode, Knight tier, AtCoder Brown — so the problem-solving muscle exists, it just needs to learn a new language (literally).
 
-## Purpose
+---
 
-This repository tracks practical progress from software engineering fundamentals toward AI engineering.
+### 🗺️ the scoreboard
+
+| module | status | the actual loot |
+|---|---|---|
+| `1. PYTHON BASICS` | ✅ shipped | variables, data types, casting, operators + 2 warm-ups (*largest of two numbers*, *driving-eligibility check*) |
+| `2. CONTROL FLOW` | ✅ shipped | if/elif/else, loops, break/continue/pass, pattern printing, a calculator, and a hall-of-shame file for every loop bug I fell for |
+| Lists / Tuples / Dicts | ⏭️ up next | — |
+| NumPy / Pandas | ⏳ in the queue | — |
+
+*no vibes-based progress here — a module only gets a ✅ when it's actually done.*
+
+---
+
+### 🧠 the notes that actually slap
+
+- [`python fundamentals.md`](./python%20fundamentals.md) — not a copy-paste syllabus, an actual "why does Python do THAT" file. Pass-by-object-reference, `is` vs `==`, why `-7 // 2` betrays every C++ instinct I have, banker's rounding being weirdly petty, and the `x = y = []` trap that gets literally everyone once. This is the file I'd send a friend mid-panic before an interview.
+
+---
+
+### 🧵 the practice reps
+
+Everything in `2. CONTROL FLOW/` is a notebook I actually ran and actually broke, before any of it made it into the notes:
+
+`calculator` · `factorial` · `multiplication_table` · pattern printing (nested loops, my beloved nemesis) · `odd_or_even` · `positive_negative_or_zero` · `sum` · plus a running `common_errors` file — basically my loop-mistakes diary
+
+---
+
+### 🛠️ the master plan (unlocked later)
+
+`requirements.txt` is already stacked for where this is going — NumPy / Pandas / scikit-learn for the ML arc, then LangChain / LangGraph, vector stores (Chroma, FAISS, Pinecone, Weaviate), and every major LLM SDK (OpenAI, Anthropic, Google, Groq, HuggingFace) for the agentic-RAG arc after that.
+
+None of it is live yet. It's ambition in a text file, not progress. Being honest about that > pretending otherwise.
+
+---
+
+### 📂 projects
+
+| project | description | status |
+|---|---|---|
+| — | — | — |
+
+*empty rn, on purpose. nothing gets listed here till it's real and it ships.*
+
+---
+
+*building in the open > building in silence*
