@@ -49,7 +49,8 @@ Two skill trees, one deadline: the AI engineering stack makes me hire-able, the 
 |:---|:---:|:---|
 | `1. PYTHON BASICS` | ✅ shipped | variables, data types, casting, operators + 2 warm-ups (*largest of two numbers*, *driving-eligibility check*) |
 | `2. CONTROL FLOW` | ✅ shipped | if/elif/else, loops, break/continue/pass, pattern printing, a calculator, and a hall-of-shame file for every loop bug I fell for |
-| Lists / Tuples / Dicts | ⏭️ up next | — |
+| `3. Data Structures` | ✅ shipped | lists, tuples, dictionaries — mutability, `.sort()` vs `sorted()`, comprehensions, and real-world use cases (stacks, queues, data pipelines) |
+| Functions / Lambda / Map / Filter | 📝 notes shipped, reps pending | `*args`/`**kwargs`, the mutable-default-argument trap, lambda/map/filter — written up, no notebook yet |
 | NumPy / Pandas | ⏳ in the queue | — |
 
 *no vibes-based progress here — a module only gets a ✅ when it's actually done.*
@@ -60,13 +61,17 @@ Two skill trees, one deadline: the AI engineering stack makes me hire-able, the 
 
 - [`python fundamentals.md`](./python%20fundamentals.md) — not a copy-paste syllabus, an actual "why does Python do *that*" file. Pass-by-object-reference vs. pass-by-value, `is` vs `==`, why `-7 // 2` betrays every C++ instinct I have, banker's rounding being weirdly petty, and the `x = y = []` aliasing trap that gets literally everyone once. This is the file I'd send a friend mid-panic before an interview.
 
+- [`python ds and functions.md`](./python%20ds%20and%20functions.md) — the sequel. Lists vs. tuples vs. dicts and when each one actually earns its place, `.sort()` vs `sorted()` finally sticking, real-world use cases (a list *is* a stack the moment you only ever `append`/`pop`), then functions — `*args`/`**kwargs`, the mutable-default-argument trap that gets everyone exactly once, and lambda/map/filter for when a full `def` is overkill.
+
 <br/>
 
 ### 🧵 the practice reps
 
-*Übung macht den Meister* — practice makes the master. Everything in `2. CONTROL FLOW/` is a notebook I actually ran and actually broke, before any of it made it into the notes:
+*Übung macht den Meister* — practice makes the master. Everything in `2. CONTROL FLOW/` and `3. Data Structures/` is a notebook I actually ran and actually broke, before any of it made it into the notes:
 
-`calculator` · `factorial` · `multiplication_table` · pattern printing (nested loops, my beloved nemesis) · `odd_or_even` · `positive_negative_or_zero` · `sum` · plus a running `common_errors` file — my loop-mistakes diary
+`calculator` · `factorial` · `multiplication_table` · pattern printing (nested loops, my beloved nemesis) · `odd_or_even` · `positive_negative_or_zero` · `sum` · plus a running `common_errors` file — my loop-mistakes diary, now joined by `3.1-Lists` · `3.2-Tuples` · `3.3-Dictionaries` — same drill, new data types.
+
+Functions, lambda, map, and filter are written up in the notes but haven't earned a notebook yet — that's the next rep, not a finished one.
 
 <br/>
 
