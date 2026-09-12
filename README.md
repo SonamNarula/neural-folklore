@@ -49,18 +49,18 @@ Two skill trees, one deadline: the AI engineering stack makes me hire-able, the 
 
 | module | status | what's inside |
 |:---|:---:|:---|
-| [`01-python-fundamentals`](./01-python-fundamentals) | ✅ shipped | Dynamic typing, pointer labels, formatting & CLI I/O, bitwise operators, pattern matching (`match/case`), loop protocols, and foundational two-pointer / sliding-window patterns |
-| [`02-data-structures`](./02-data-structures) | ✅ shipped | String immutability & tokenization, dynamic array over-allocation, compact hash tables (dicts), sets, `collections.deque` vs `list` queues, and list/dict/set comprehensions |
-| [`03-functions`](./03-functions) | ✅ shipped | First-class citizens, `*args`/`**kwargs`, positional-only (`/`) and keyword-only (`*`), lambda/map/filter/reduce, LEGB scope & closures, recursion limits, and resilient retry decorators |
-| [`04-oop`](./04-oop) | ✅ shipped | Class vs instance namespaces, `__slots__` memory savings, `__new__` vs `__init__`, MRO & C3 Linearization, polymorphism & ABCs, property descriptors, and PyTorch `__call__`/`__getitem__` dunders |
-| [`05-python-intermediate`](./05-python-intermediate) | ✅ shipped | Exception hierarchies & chaining, chunked file streaming for 50GB datasets, JSONL parsing, modules & circular import fixes, `uv` & venvs, generators (`yield`/`yield from`), and static typing (`mypy`) |
-| [`06-python-for-data`](./06-python-for-data) | ✅ shipped | NumPy `ndarray` architecture, strides, SIMD vectorization, broadcasting rules, Pandas `loc`/`iloc`, `SettingWithCopyWarning`, data cleaning, GroupBy Split-Apply-Combine, Time Series, and Polars |
-| [`07-visualization`](./07-visualization) | ✅ shipped | Matplotlib Object-Oriented API (`fig, ax`), multi-plot grids, Seaborn statistical distributions & heatmaps, and ML diagnostics (ROC-AUC, Precision-Recall, Confusion Matrix, loss curves) |
-| [`08-python-for-ml`](./08-python-for-ml) | ✅ shipped | Leak-free data pipelines, feature scaling (`RobustScaler`), categorical encodings, Stratified K-Fold & TimeSeries cross-validation, and Scikit-Learn custom `BaseEstimator` / `Pipeline` wrappers |
-| [`09-python-for-genai`](./09-python-for-genai) | ✅ shipped | HTTP/REST fundamentals, `requests.Session` connection pooling, secret management, Server-Sent Events (SSE) token streaming, Pydantic v2 schemas, `asyncio` & `Semaphore`, tool calling, and RAG from scratch |
-| [`10-advanced-python`](./10-advanced-python) | ✅ shipped | Reference counting, generational cyclic GC, mutability gotchas, shallow vs deep copy, CPython bytecode & the GIL, profiling (`cProfile`/`timeit`), and Multiprocessing vs Threading vs AsyncIO |
-| [`11-interview-preparation`](./11-interview-preparation) | ✅ shipped | Top 50 conceptual & systems interview Q&As, 25 classic Python traps, 30 tricky output-prediction puzzles with line-by-line traces, 5 core coding patterns, and a master Big-O cheat sheet |
-| [`12-project-patterns`](./12-project-patterns) | ✅ shipped | Production ETL pipeline architecture, modular ML repository template, production FastAPI GenAI microservice blueprint, and a comprehensive enterprise production checklist |
+| [`01-python-fundamentals-notes`](./01-python-fundamentals-notes) | ✅ shipped | Dynamic typing, pointer labels, formatting & CLI I/O, bitwise operators, pattern matching (`match/case`), loop protocols, and foundational two-pointer / sliding-window patterns |
+| [`02-data-structures-notes`](./02-data-structures-notes) | ✅ shipped | String immutability & tokenization, dynamic array over-allocation, compact hash tables (dicts), sets, `collections.deque` vs `list` queues, and list/dict/set comprehensions |
+| [`03-functions-notes`](./03-functions-notes) | ✅ shipped | First-class citizens, `*args`/`**kwargs`, positional-only (`/`) and keyword-only (`*`), lambda/map/filter/reduce, LEGB scope & closures, recursion limits, and resilient retry decorators |
+| [`04-oop-notes`](./04-oop-notes) | ✅ shipped | Class vs instance namespaces, `__slots__` memory savings, `__new__` vs `__init__`, MRO & C3 Linearization, polymorphism & ABCs, property descriptors, and PyTorch `__call__`/`__getitem__` dunders |
+| [`05-python-intermediate-notes`](./05-python-intermediate-notes) | ✅ shipped | Exception hierarchies & chaining, chunked file streaming for 50GB datasets, JSONL parsing, modules & circular import fixes, `uv` & venvs, generators (`yield`/`yield from`), and static typing (`mypy`) |
+| [`06-python-for-data-notes`](./06-python-for-data-notes) | ✅ shipped | NumPy `ndarray` architecture, strides, SIMD vectorization, broadcasting rules, Pandas `loc`/`iloc`, `SettingWithCopyWarning`, data cleaning, GroupBy Split-Apply-Combine, Time Series, and Polars |
+| [`07-visualization-notes`](./07-visualization-notes) | ✅ shipped | Matplotlib Object-Oriented API (`fig, ax`), multi-plot grids, Seaborn statistical distributions & heatmaps, and ML diagnostics (ROC-AUC, Precision-Recall, Confusion Matrix, loss curves) |
+| [`08-python-for-ml-notes`](./08-python-for-ml-notes) | ✅ shipped | Leak-free data pipelines, feature scaling (`RobustScaler`), categorical encodings, Stratified K-Fold & TimeSeries cross-validation, and Scikit-Learn custom `BaseEstimator` / `Pipeline` wrappers |
+| [`09-python-for-genai-notes`](./09-python-for-genai-notes) | ✅ shipped | HTTP/REST fundamentals, `requests.Session` connection pooling, secret management, Server-Sent Events (SSE) token streaming, Pydantic v2 schemas, `asyncio` & `Semaphore`, tool calling, and RAG from scratch |
+| [`10-advanced-python-notes`](./10-advanced-python-notes) | ✅ shipped | Reference counting, generational cyclic GC, mutability gotchas, shallow vs deep copy, CPython bytecode & the GIL, profiling (`cProfile`/`timeit`), and Multiprocessing vs Threading vs AsyncIO |
+| [`11-interview-preparation-notes`](./11-interview-preparation-notes) | ✅ shipped | Top 50 conceptual & systems interview Q&As, 25 classic Python traps, 30 tricky output-prediction puzzles with line-by-line traces, 5 core coding patterns, and a master Big-O cheat sheet |
+| [`12-project-patterns-notes`](./12-project-patterns-notes) | ✅ shipped | Production ETL pipeline architecture, modular ML repository template, production FastAPI GenAI microservice blueprint, and a comprehensive enterprise production checklist |
 
 *no vibes-based progress here — every module is implemented with first-principles explanations, mental models, real AI/ML code, and interview traps.*
 
@@ -70,13 +70,13 @@ Two skill trees, one deadline: the AI engineering stack makes me hire-able, the 
 
 ### 🧠 the deep dives that actually slap
 
-- [**Memory Management & Garbage Collection**](./10-advanced-python/01-memory-management.md) — Not hand-waving "Python has GC", but how `ob_refcnt` works in C, how the generational collector reclaims cyclical islands, why `del` doesn't immediately delete objects, and why Meta/Instagram disabled GC on their web workers to save 10% RAM.
-- [**RAG Engine from Scratch**](./09-python-for-genai/08-python-for-rag.md) — Building an in-memory vector retrieval engine using pure Python and NumPy: chunking strategies, dense embedding vectors, cosine similarity dot products, and contextual prompt injection.
-- [**25 Classic Python Traps**](./11-interview-preparation/02-common-traps.md) — The ultimate candidate survival guide: mutable default arguments, late binding closures in loops, small integer caching (-5 to 256), `matrix = [[0]*3]*3` aliasing, tuple with mutable list edge cases, and walrus operator scope leaks.
-- [**CPython Internals, Bytecode & the GIL**](./10-advanced-python/04-python-internals.md) — Decompiling bytecode with `dis`, the `PyObject` C-struct, why NumPy and PyTorch bypass the GIL during tensor math, and what PEP 703 (Free-threaded Python 3.13) means for multi-core AI computing.
-- [**Pydantic v2 & Structured LLM Outputs**](./09-python-for-genai/05-pydantic.md) — Rust-backed `pydantic-core` validation, field validators, extracting reliable JSON schemas for tool calling, and self-correcting schema errors.
-- [**AsyncIO & Concurrency Limits**](./09-python-for-genai/06-async-python.md) — Single-threaded cooperative multitasking, why threads don't speed up CPU-bound tasks, and using `asyncio.Semaphore` to run high-throughput batch LLM evaluations without hitting HTTP 429 rate limits.
-- [**Top 50 Interview Questions**](./11-interview-preparation/01-python-interview-questions.md) — Rigorous technical answers covering language fundamentals, data structures, vector computing, and Generative AI systems architecture.
+- [**Memory Management & Garbage Collection**](./10-advanced-python-notes/01-memory-management.md) — Not hand-waving "Python has GC", but how `ob_refcnt` works in C, how the generational collector reclaims cyclical islands, why `del` doesn't immediately delete objects, and why Meta/Instagram disabled GC on their web workers to save 10% RAM.
+- [**RAG Engine from Scratch**](./09-python-for-genai-notes/08-python-for-rag.md) — Building an in-memory vector retrieval engine using pure Python and NumPy: chunking strategies, dense embedding vectors, cosine similarity dot products, and contextual prompt injection.
+- [**25 Classic Python Traps**](./11-interview-preparation-notes/02-common-traps.md) — The ultimate candidate survival guide: mutable default arguments, late binding closures in loops, small integer caching (-5 to 256), `matrix = [[0]*3]*3` aliasing, tuple with mutable list edge cases, and walrus operator scope leaks.
+- [**CPython Internals, Bytecode & the GIL**](./10-advanced-python-notes/04-python-internals.md) — Decompiling bytecode with `dis`, the `PyObject` C-struct, why NumPy and PyTorch bypass the GIL during tensor math, and what PEP 703 (Free-threaded Python 3.13) means for multi-core AI computing.
+- [**Pydantic v2 & Structured LLM Outputs**](./09-python-for-genai-notes/05-pydantic.md) — Rust-backed `pydantic-core` validation, field validators, extracting reliable JSON schemas for tool calling, and self-correcting schema errors.
+- [**AsyncIO & Concurrency Limits**](./09-python-for-genai-notes/06-async-python.md) — Single-threaded cooperative multitasking, why threads don't speed up CPU-bound tasks, and using `asyncio.Semaphore` to run high-throughput batch LLM evaluations without hitting HTTP 429 rate limits.
+- [**Top 50 Interview Questions**](./11-interview-preparation-notes/01-python-interview-questions.md) — Rigorous technical answers covering language fundamentals, data structures, vector computing, and Generative AI systems architecture.
 
 <br/>
 
@@ -102,25 +102,25 @@ Depending on what you're prepping for, follow these reading orders:
 
 #### Track 1: The Generative AI & LLM Engineer
 *Goal: Build scalable agentic workflows, production RAG pipelines, and high-throughput async LLM services.*
-1. [`01-python-fundamentals/01-variables-and-data-types.md`](./01-python-fundamentals/01-variables-and-data-types.md) & [`03-functions/06-decorators.md`](./03-functions/06-decorators.md)
-2. [`05-python-intermediate/03-json.md`](./05-python-intermediate/03-json.md) & [`05-python-intermediate/08-type-hints.md`](./05-python-intermediate/08-type-hints.md)
-3. **Full Module**: [`09-python-for-genai/`](./09-python-for-genai) (HTTP, Requests Pooling, Pydantic v2, AsyncIO, LLM SDKs, RAG from Scratch)
-4. [`12-project-patterns/03-genai-project-structure.md`](./12-project-patterns/03-genai-project-structure.md)
+1. [`01-python-fundamentals-notes/01-variables-and-data-types.md`](./01-python-fundamentals-notes/01-variables-and-data-types.md) & [`03-functions-notes/06-decorators.md`](./03-functions-notes/06-decorators.md)
+2. [`05-python-intermediate-notes/03-json.md`](./05-python-intermediate-notes/03-json.md) & [`05-python-intermediate-notes/08-type-hints.md`](./05-python-intermediate-notes/08-type-hints.md)
+3. **Full Module**: [`09-python-for-genai-notes/`](./09-python-for-genai-notes) (HTTP, Requests Pooling, Pydantic v2, AsyncIO, LLM SDKs, RAG from Scratch)
+4. [`12-project-patterns-notes/03-genai-project-structure.md`](./12-project-patterns-notes/03-genai-project-structure.md)
 
 #### Track 2: The Machine Learning & Data Science Engineer
 *Goal: Master high-performance vectorized operations, leak-free feature pipelines, and Scikit-Learn architecture.*
-1. [`02-data-structures/02-lists.md`](./02-data-structures/02-lists.md) & [`02-data-structures/07-comprehensions.md`](./02-data-structures/07-comprehensions.md)
-2. **Full Module**: [`06-python-for-data/`](./06-python-for-data) (NumPy Strides, SIMD Vectorization, Pandas, Time Series, Polars)
-3. **Full Module**: [`07-visualization/`](./07-visualization) (Matplotlib OO, Seaborn, ML Diagnostics)
-4. **Full Module**: [`08-python-for-ml/`](./08-python-for-ml) (Leak-free Pipelines, Feature Engineering, CV Workflow)
-5. [`12-project-patterns/01-data-processing-project.md`](./12-project-patterns/01-data-processing-project.md) & [`12-project-patterns/02-ml-project-structure.md`](./12-project-patterns/02-ml-project-structure.md)
+1. [`02-data-structures-notes/02-lists.md`](./02-data-structures-notes/02-lists.md) & [`02-data-structures-notes/07-comprehensions.md`](./02-data-structures-notes/07-comprehensions.md)
+2. **Full Module**: [`06-python-for-data-notes/`](./06-python-for-data-notes) (NumPy Strides, SIMD Vectorization, Pandas, Time Series, Polars)
+3. **Full Module**: [`07-visualization-notes/`](./07-visualization-notes) (Matplotlib OO, Seaborn, ML Diagnostics)
+4. **Full Module**: [`08-python-for-ml-notes/`](./08-python-for-ml-notes) (Leak-free Pipelines, Feature Engineering, CV Workflow)
+5. [`12-project-patterns-notes/01-data-processing-project.md`](./12-project-patterns-notes/01-data-processing-project.md) & [`12-project-patterns-notes/02-ml-project-structure.md`](./12-project-patterns-notes/02-ml-project-structure.md)
 
 #### Track 3: Senior Python & Technical Interview Mastery
 *Goal: Ace coding assessments, output-prediction rounds, and deep systems interviews.*
-1. [`01-python-fundamentals/`](./01-python-fundamentals) & [`02-data-structures/`](./02-data-structures)
-2. [`04-oop/`](./04-oop) & [`05-python-intermediate/`](./05-python-intermediate)
-3. **Full Module**: [`10-advanced-python/`](./10-advanced-python) (Memory Management, Mutability, Copies, Bytecode/GIL, Concurrency)
-4. **Full Module**: [`11-interview-preparation/`](./11-interview-preparation) (Top 50 Q&A, 25 Classic Traps, 30 Output Puzzles, Coding Patterns, Cheat Sheet)
+1. [`01-python-fundamentals-notes/`](./01-python-fundamentals-notes) & [`02-data-structures-notes/`](./02-data-structures-notes)
+2. [`04-oop-notes/`](./04-oop-notes) & [`05-python-intermediate-notes/`](./05-python-intermediate-notes)
+3. **Full Module**: [`10-advanced-python-notes/`](./10-advanced-python-notes) (Memory Management, Mutability, Copies, Bytecode/GIL, Concurrency)
+4. **Full Module**: [`11-interview-preparation-notes/`](./11-interview-preparation-notes) (Top 50 Q&A, 25 Classic Traps, 30 Output Puzzles, Coding Patterns, Cheat Sheet)
 
 <br/>
 
